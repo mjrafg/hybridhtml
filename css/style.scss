@@ -1,0 +1,421 @@
+$accentColor:#e10023;
+$primaryColor:#555555;
+$mainPadding:60px;
+$mainTopBottomMargin:59px;
+$max-width:500px;
+$min-width:320px;
+
+@font-face {
+    font-family: 'irsans';
+    src: url('/fonts/AIranianSans.eot?#iefix') format('embedded-opentype'),  url('/fonts/AIranianSans.woff') format('woff'), url('/fonts/AIranianSans.ttf')  format('truetype'), url('/fonts/AIranianSans.svg#AIranianSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+*{
+    box-sizing: border-box;
+    font-family: 'irsans',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+.align-vertically{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.main-container{
+    max-width: $max-width;
+    min-width: $min-width;
+    width: 100%;
+    padding: 0 $mainPadding 0;
+    margin: $mainTopBottomMargin auto 0;
+}
+.logo-img{
+    width: 85px;
+    margin-bottom: 54px
+}
+.margin-top-low
+{
+    margin-top: 10px
+}
+.input-container{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px
+}
+.input-container *{
+    float: right;
+    font-size: 12px;
+}
+.input-container input[type=text]{
+    width: calc(100% - 66px);
+    background-color: $primaryColor;
+    border: none;
+    height: 100%;
+    color: #d7d7d7;
+    font-size: 17px;
+    padding: 0 10px;
+    outline: none;
+    text-align: right
+}
+.input-side{
+    background: #d7d7d7;
+    height: 100%;
+    width: 66px;
+}
+.full{
+    width: 100%;
+    display: block
+}
+.input-side img{
+    width: 20px
+}
+.round-low{
+    border-radius: 5px  
+}
+.round-right{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+.round-left{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.login-button-container
+{
+    width: 100px;
+    height: 30px;
+}
+.button{
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    border: none
+}
+.button-side{
+    width: 25px
+}
+.button-side img{
+    width: 90%;
+    height: 100%
+}
+.button-primary{
+    background-color: $primaryColor;
+    color: white
+}
+.button-accent{
+    background-color: $accentColor !important;
+    color: white
+}
+.button-accent :active { 
+    background-color: #a80019
+
+}
+.button-accent :focus { 
+    background-color: #a80019
+
+}
+.round-circle-right{
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.round-circle-right :active
+{
+    border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.round-circle-left{
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px
+
+  }
+  .round-circle-left :active
+  {
+      border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+.login-button{
+    width: 70px
+}
+.forgetPass{
+ font-size: 12px;
+ line-height: 30px
+}
+.fix-bottom{
+    position: fixed;
+    bottom: $mainTopBottomMargin;
+    max-width: $max-width;
+    min-width: $min-width;
+    margin: 0 auto;
+    padding: 0 $mainPadding
+}
+.register-button-container{
+    width: 100%;
+
+    height: 40px;
+}
+.register-button-container img{
+    height: 30px;
+    float: right;
+    position: relative;
+    bottom: 35px;
+    right: 5px;
+    background: #fff;
+    border-radius: 13px 0 0 13px;
+    padding: 0 5px;
+}
+.register-button{
+    border-radius: 25px 0 0 0;
+    width: 100%
+}
+.register-input-container{
+    width: 100%;
+    background-color: $primaryColor;
+    padding: 5px;
+    border-radius: 10px 0 10px;
+    height: 40px;
+    margin-bottom: 5px;
+    outline: none
+}
+.register-input-container div{
+    height: 100%;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px
+}
+.register-input-container img{
+    height: 100%;
+    
+}
+.loading-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width:300px  
+}
+.loader {
+    border: 16px solid #fff;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    border-right: 16px solid #3498db;
+    border-bottom: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    
+    
+  }
+  .loader-in{
+  width:111px;
+  height:111px;
+  border:5px solid #000;
+  border-radius:50%
+  }
+  .main-content-center-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #e10023;
+  }
+  
+  .main-content-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 500px;
+    min-width: 320px;
+    width: 100%;
+    padding: 0 20px 0;
+    height: 50%;
+    max-height: 500px;
+  }
+  .main-item-inner-container{
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      border-radius: 50%;
+  }
+  .main-item-inner{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+.main-item-inner img{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+  .top-content {
+    width: 100%;
+    background: #fff;
+    height: 50%;
+    position: relative;
+    border-radius: 5px 5px 0 0
+  }
+  
+  .bottom-content {
+    width: 100%;
+    background: #ccc;
+    height: 50%;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+    top:-1px;
+  }
+  .small-left-circle{
+      width: 20px;
+      height: 20px;
+      background: $accentColor;
+      position: absolute;
+      border-radius: 50%;
+      top: -10px;
+      left: -10px;
+  }
+  .small-right-circle{
+    width: 20px;
+    height: 20px;
+    background: $accentColor;
+    position: absolute;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+}
+.main-item{
+    cursor: pointer;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background: #55555555;
+    position: absolute;
+    border-radius: 50%;
+    top: -40px;
+    transition: linear .5s
+} 
+.main-item label{
+    position: absolute;    
+    bottom: -30px;
+    width: 100%;
+    font-size: 14px
+}
+.main-circut{
+    width: 280px;
+    position: absolute;
+}
+.main-circut-right{
+    top: -50px;
+    right: -50px
+}
+.main-circut-left{
+    bottom: 20px;
+    left: -100px;
+}
+.main-item-left{
+    left: 10%;
+}
+.main-item-left label,.main-item-middle label,.main-item-right label,.main-item-right-high label,.main-item-left-high label{
+    left: calc(50% - 40px);
+}
+.main-item-middle{
+    left: calc(50% - 40px);
+}
+.main-item-right{
+    right: 10%;
+}
+.main-item-right-high{
+    right: 25%;
+}
+.main-item-left-high{
+    left: 25%;
+}
+//for laptop
+@media screen and (min-width: 1000px) {  
+    .main-circut {
+        width: 450px;
+    }
+    .main-circut-right{
+        top: 0;
+        right: -100px
+    }
+    .main-item-inner-container {
+
+        padding: 15px
+    }
+  }
+
+@media screen and (max-height: 500px) {  
+    .main-circut-right {
+        top: -65px
+    }
+  }
+@media screen and (min-width: 500px) {  
+    .main-item-middle ,.main-item-left label,.main-item-middle label,.main-item-right label,.main-item-right-high label,.main-item-left-high label{
+        left: calc(50% - 50px);
+    }  
+    .main-item{
+        width:100px;
+        height: 100px;
+        top: -50px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .main-item-left{
+        left: 10%;
+    }
+    .main-item-right{
+        right: 10%;
+    }
+    .main-item-right-high{
+        right: 23%;
+    }
+    .main-item-left-high{
+        left: 23%;
+    }
+  }
+  @media screen and (max-width: 325px) {
+    .forgetPass{
+        font-size: 11px;
+    }
+    .main-item-left{
+        left: 5%;
+    }
+    .main-item-right{
+        right: 5%;
+    }
+    .main-item-right-high{
+        right: 20%;
+    }
+    .main-item-left-high{
+        left: 20%;
+    }
+  }
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
